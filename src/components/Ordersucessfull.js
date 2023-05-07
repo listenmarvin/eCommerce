@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Ordersucessfull() {
   const navigate = useNavigate();
+  //This function navigates to the ProductList.js
   function handleProduct() {
     navigate("/ProductList");
   }

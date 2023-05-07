@@ -2,12 +2,12 @@ import React, { useState } from "react";
 
 export default function WishList({ wishcart, addToCart }) {
   const [wishCART, setWish] = useState(wishcart);
-
+//This function is used to remove items from the  wishcart
   const removeFromCart = (id) => {
     const newList = wishCART.filter((l) => l.id !== id);
     setWish(newList);
   };
-
+//This put the product to wishList and from here user can remove it and user can add it cart also
   return (
     <div className="flex">
       {wishCART?.map((wishItem, index) => {

@@ -12,17 +12,17 @@ import Ordersucessfull from "./components/Ordersucessfull";
 
 function App() {
   const [cart, setCart] = useState([]);
-
+//This function adds product into cart
   const addToCart = (data) => {
     setCart([...cart, { ...data, Quantity: 1 }]);
   };
 
   const [wishcart, setWish] = useState([]);
-
+//This function adds product into WishList
   const addToWish = (wishdata) => {
     setWish([...wishcart, { ...wishdata }]);
   };
-
+//This is router section where I used router to navigate to different pages
   return (
     <div>
       <BrowserRouter>

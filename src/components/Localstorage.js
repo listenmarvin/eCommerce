@@ -2,7 +2,8 @@ import React, { useRef } from "react";
 import "../App.css";
 
 import Checkout from "./Checkout";
-
+//This stores the userName and password into localstorage 
+// and also check wheather user is loged in or not
 export default function Localstorage() {
   const email = useRef();
   const password = useRef();

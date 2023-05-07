@@ -5,13 +5,15 @@ function CartList({ cart }) {
   const [CART, setCart] = useState(cart);
 
   const navigate = useNavigate();
+  //Navigates to Localstorage.js
   function handleClick() {
     navigate("/Localstorage");
   }
+  //Navigates to checkout.js
   function handleGuest() {
     navigate("/Checkout");
   }
-
+//This put the product into cartList
   return (
     <div className="container">
       {CART?.map((cartItem, cartIdex) => {
@@ -35,6 +37,7 @@ function CartList({ cart }) {
                 </span>
               </div>
               <div>
+                {/* This increase and decreses the quantity */}
                 <button
                   className="btn btn-primary"
                   onClick={() => {
@@ -72,7 +75,7 @@ function CartList({ cart }) {
           </div>
         );
       })}
-
+      {/* calculate the total value of the item */}
       <p className="product_item">
         {" "}
         <b>Total :</b>

@@ -1,5 +1,6 @@
 import "../App.css";
 function ProductList({ product, addToCart, addToWish }) {
+  //This page displays the product items
   return (
     <div className="flex">
       {product.map((productItem, ProductIndex) => {

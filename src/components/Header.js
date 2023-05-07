@@ -2,11 +2,12 @@ import "../App.css";
 import { Outlet, Link } from "react-router-dom";
 
 function Header() {
+  // This function use to logout 
   const handleLogout = () => {
     localStorage.clear();
     window.location.reload();
   };
-
+//This is a Navbar file
   return (
     <nav className="navbar navbar-expand-lg bg-secondary">
       <div className="container-fluid">

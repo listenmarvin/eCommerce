@@ -6,9 +6,11 @@ export default function Checkout(props) {
   let tempValue = 0;
   tempValue = props.passLogin;
   console.log(tempValue);
+  //This function navigates to Ordersucessfull.js
   function handleLogin() {
     navigate("/Ordersucessfull");
   }
+  //This takes the delivery location of the customber
   return (
     <div className="vh-100 d-flex justify-content-center align-items-center">
       <div class="col-md-8 order-md-1">
